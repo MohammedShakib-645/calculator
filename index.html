@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="calculator">
+    <div class="display">
+      <p id="expression"></p>
+      <h1 id="result">0</h1>
+    </div>
+
+    <div class="buttons">
+      <button onclick="clearAll()" class="btn gray">AC</button>
+      <button onclick="deleteLast()" class="btn gray">DEL</button>
+      <button onclick="addToExpr('%')" class="btn gray">%</button>
+      <button onclick="addToExpr('/')" class="btn orange">÷</button>
+
+      <button onclick="addToExpr('7')" class="btn">7</button>
+      <button onclick="addToExpr('8')" class="btn">8</button>
+      <button onclick="addToExpr('9')" class="btn">9</button>
+      <button onclick="addToExpr('*')" class="btn orange">×</button>
+
+      <button onclick="addToExpr('4')" class="btn">4</button>
+      <button onclick="addToExpr('5')" class="btn">5</button>
+      <button onclick="addToExpr('6')" class="btn">6</button>
+      <button onclick="addToExpr('-')" class="btn orange">−</button>
+
+      <button onclick="addToExpr('1')" class="btn">1</button>
+      <button onclick="addToExpr('2')" class="btn">2</button>
+      <button onclick="addToExpr('3')" class="btn">3</button>
+      <button onclick="addToExpr('+')" class="btn orange">+</button>
+
+      <button onclick="addToExpr('0')" class="btn wide">0</button>
+      <button onclick="addToExpr('.')" class="btn">.</button>
+      <button onclick="calculate()" class="btn green">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
